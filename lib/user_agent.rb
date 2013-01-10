@@ -3,7 +3,7 @@ require 'user_agent/browsers'
 require 'user_agent/operating_systems'
 require 'user_agent/version'
 
-class UserAgent
+class BVUserAgent
   # http://www.texsoft.it/index.php?m=sw.php.useragent
   MATCHER = %r{
     ^([^/\s]+)        # Product

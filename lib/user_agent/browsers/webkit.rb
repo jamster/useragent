@@ -1,4 +1,4 @@
-class UserAgent
+class BVUserAgent
   module Browsers
     module Webkit
       def self.extend?(agent)

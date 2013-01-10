@@ -1,4 +1,4 @@
-class UserAgent
+class BVUserAgent
   module Browsers
     module Opera
       def self.extend?(agent)

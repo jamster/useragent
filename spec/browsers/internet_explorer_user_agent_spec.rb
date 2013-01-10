@@ -18,9 +18,9 @@ shared_examples_for "Internet Explorer browser" do
   end
 end
 
-describe "UserAgent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)'" do
+describe "BVUserAgent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)'" do
   before do
-    @useragent = UserAgent.parse("Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)")
+    @useragent = BVUserAgent.parse("Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -36,9 +36,9 @@ describe "UserAgent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Triden
   it { @useragent.should_not be_mobile }
 end
 
-describe "UserAgent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; ARM; Trident/6.0; Touch; .NET4.0E; .NET4.0C; Tablet PC 2.0)'" do
+describe "BVUserAgent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; ARM; Trident/6.0; Touch; .NET4.0E; .NET4.0C; Tablet PC 2.0)'" do
   before do
-    @useragent = UserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; ARM; Trident/6.0; Touch; .NET4.0E; .NET4.0C; Tablet PC 2.0)")
+    @useragent = BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; ARM; Trident/6.0; Touch; .NET4.0E; .NET4.0C; Tablet PC 2.0)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -55,9 +55,9 @@ describe "UserAgent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; ARM; Tr
   it { @useragent.should_not be_mobile }
 end
 
-describe "UserAgent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; ARM; Trident/6.0; Touch)'" do
+describe "BVUserAgent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; ARM; Trident/6.0; Touch)'" do
   before do
-    @useragent = UserAgent.parse("Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; ARM; Trident/6.0; Touch)")
+    @useragent = BVUserAgent.parse("Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; ARM; Trident/6.0; Touch)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -74,9 +74,9 @@ describe "UserAgent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; ARM; T
   it { @useragent.should_not be_mobile }
 end
 
-describe "UserAgent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)'" do
+describe "BVUserAgent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)'" do
   before do
-    @useragent = UserAgent.parse("Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)")
+    @useragent = BVUserAgent.parse("Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -92,9 +92,9 @@ describe "UserAgent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident
   it { @useragent.should_not be_mobile }
 end
 
-describe "UserAgent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)'" do
+describe "BVUserAgent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)'" do
   before do
-    @useragent = UserAgent.parse("Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)")
+    @useragent = BVUserAgent.parse("Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -111,9 +111,9 @@ describe "UserAgent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident
   it { @useragent.should_not be_mobile }
 end
 
-describe "UserAgent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C)' Compat View" do
+describe "BVUserAgent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C)' Compat View" do
   before do
-    @useragent = UserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C)")
+    @useragent = BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -130,9 +130,9 @@ describe "UserAgent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; 
   it { @useragent.should_not be_mobile }
 end
 
-describe "UserAgent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)'" do
+describe "BVUserAgent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)'" do
   before do
-    @useragent = UserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)")
+    @useragent = BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -146,9 +146,9 @@ describe "UserAgent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)'" do
   end
 end
 
-describe "UserAgent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)'" do
+describe "BVUserAgent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)'" do
   before do
-    @useragent = UserAgent.parse("Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)")
+    @useragent = BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -166,37 +166,37 @@ describe "UserAgent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)'" 
   end
 
   it "should not be == 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)'" do
-    @useragent.should_not == UserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
+    @useragent.should_not == BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
   end
 
   it "should be > 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)'" do
-    @useragent.should > UserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
+    @useragent.should > BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
   end
 
   it "should not be < 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)'" do
-    @useragent.should_not < UserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
+    @useragent.should_not < BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
   end
 
   it "should be >= 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)'" do
-    @useragent.should >= UserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
+    @useragent.should >= BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
   end
 
   it "should not be >= 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)'" do
-    @useragent.should_not >= UserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)")
+    @useragent.should_not >= BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)")
   end
 
   it "should be <= 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)'" do
-    @useragent.should <= UserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)")
+    @useragent.should <= BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)")
   end
 
   it "should not be <= 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)'" do
-    @useragent.should_not <= UserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
+    @useragent.should_not <= BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
   end
 end
 
-describe "UserAgent: 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)'" do
+describe "BVUserAgent: 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)'" do
   before do
-    @useragent = UserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
+    @useragent = BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -210,9 +210,9 @@ describe "UserAgent: 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)'" do
   end
 end
 
-describe "UserAgent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917)'" do
+describe "BVUserAgent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917)'" do
   before do
-    @useragent = UserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917)")
+    @useragent = BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -230,7 +230,7 @@ end
 
 describe "Non-Chrome Frame browsers" do
   before do
-    @useragent = UserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
+    @useragent = BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.1)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -242,7 +242,7 @@ end
 
 describe "Chrome Frame installs before version 4.0" do
   before do
-    @useragent = UserAgent.parse("Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; chromeframe)")
+    @useragent = BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; chromeframe)")
   end
 
   it_should_behave_like "Internet Explorer browser"
@@ -259,7 +259,7 @@ end
 describe "Chrome Frame from version 4.0 on" do
   context "as separate product" do
     before do
-      @useragent = UserAgent.parse("Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) chromeframe/4.0")
+      @useragent = BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) chromeframe/4.0")
     end
 
     it_should_behave_like "Internet Explorer browser"
@@ -275,7 +275,7 @@ describe "Chrome Frame from version 4.0 on" do
 
   context "as versioned comment" do
     before do
-      @useragent = UserAgent.parse("Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; chromeframe/4.0)")
+      @useragent = BVUserAgent.parse("Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; chromeframe/4.0)")
     end
 
     it_should_behave_like "Internet Explorer browser"

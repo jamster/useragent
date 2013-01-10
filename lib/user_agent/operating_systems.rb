@@ -1,4 +1,4 @@
-class UserAgent
+class BVUserAgent
   module OperatingSystems
     Windows = {
       "Windows NT 6.2"  => "Windows 8",

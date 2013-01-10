@@ -1,4 +1,4 @@
-class UserAgent
+class BVUserAgent
   module Browsers
     module InternetExplorer
       def self.extend?(agent)
@@ -35,7 +35,7 @@ class UserAgent
         cf = application.comment.include?("chromeframe") || detect_product("chromeframe")
         return cf if cf
         cf_comment = application.comment.detect { |c| c['chromeframe/'] }
-        cf_comment ? UserAgent.new(*cf_comment.split('/', 2)) : nil
+        cf_comment ? BVUserAgent.new(*cf_comment.split('/', 2)) : nil
       end
 
       def platform

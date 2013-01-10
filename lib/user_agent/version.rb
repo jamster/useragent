@@ -1,4 +1,4 @@
-class UserAgent
+class BVUserAgent
   class Version
     include ::Comparable
 
